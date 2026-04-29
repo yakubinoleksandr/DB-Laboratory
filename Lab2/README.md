@@ -24,10 +24,10 @@
 
 ## Реляційна схема бази даних
 
-- Specialization(spec_name)
-- Doctor(first_name, last_name, spec_id, cabinet_number, experiens_years)
-- Patient(medical_card_number, first_name, last_name, birth_date, gender, phone, address)
-- Appointment(patient_id, doctor_id, app_date, app_time, app_status)
+- Specialization(`spec_id`, spec_name)
+- Doctor(`doctor_id`, first_name, last_name, `spec_id`, cabinet_number, experiens_years)
+- Patient(`patient_id`, medical_card_number, first_name, last_name, birth_date, gender, phone, address)
+- Appointment(`appointment_id`, `patient_id`, `doctor_id`, app_date, app_time, app_status)
 
 ## Основні звʼязки між таблицями
 
@@ -122,5 +122,23 @@ VALUES
 
 ## Тестування
 
-Для перевірки коректності створення схеми було виконано:
-- створення всіх типів і таблиць у PostgreSQL
+Додавання тестових даних до таблиць:
+### Appointment
+![alt text](Appointment.png)
+### Doctor
+![alt text](Doctor.png)
+### Patient
+![alt text](Patient.png)
+### Specialization
+![alt text](Specialization.png)
+
+Усі SQL-скрипти виконуються без помилок.
+
+---
+
+## Висновки
+У результаті виконання лабораторної роботи:
+- ER-діаграма була успішно перетворена у реляційну схему,
+- реалізовано таблиці з первинними та зовнішніми ключами,
+- використано ENUM-типи для забезпечення цілісності даних,
+- схема протестована на коректність у PostgreSQL.
