@@ -54,7 +54,15 @@ WHERE app_time <='10:00:00';
 ![Alt text](Appointment.png)
 
 ```sql
+-- Вивести всы спеціалізації
 SELECT * FROM specialization;
 ```
 
 ![Alt text](Specialization.png)
+
+```sql
+-- Вивести всіх лікарів
+SELECT * FROM doctor;
+```
+![Alt text](Doctor.png)
+
