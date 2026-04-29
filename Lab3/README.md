@@ -38,14 +38,23 @@ VALUES ('Деніс', 'Дудус', 2, 69, 0);
 -- Додавання нового запису до лікаря
 INSERT INTO appointment(patient_id, doctor_id, app_date, app_time)
 VALUES (1, 2, '2026-04-30', '10:00:00');
-
+```
+```sql
 -- Вивести пацієнтів хто народився 1994 і раніше
 SELECT * FROM patient
 WHERE birth_date <= '1994-12-31';
+```
+![Alt text](Patient.png)
 
+```sql
 -- Вивести всі прийому до 10 години
 SELECT * FROM appointment
 WHERE app_time <='10:00:00';
 ```
+![Alt text](Appointment.png)
 
+```sql
+SELECT * FROM specialization;
+```
 
+![Alt text](Specialization.png)
