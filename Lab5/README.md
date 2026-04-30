@@ -192,3 +192,5 @@ CREATE TABLE Appointment(
 ```
 
 ### Оновлена ER-Diagrama
+
+![alt text](ER-Diagram.png)
