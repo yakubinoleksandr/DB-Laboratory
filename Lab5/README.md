@@ -190,3 +190,5 @@ CREATE TABLE Appointment(
     UNIQUE (doctor_id, app_date, app_time)
 );
 ```
+
+### Оновлена ER-Diagrama
